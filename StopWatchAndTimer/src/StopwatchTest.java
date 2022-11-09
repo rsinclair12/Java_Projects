@@ -68,7 +68,7 @@ class StopwatchTest {
             // countUp method should be public
             assertTrue(Modifier.isPublic(countUp.getModifiers()));
         } catch (NoSuchMethodException e) {
-            assetNotNull(countUp);
+            assertNotNull(countUp);
         }
     }
 }
